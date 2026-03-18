@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Proxy</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0f0f17;
+      color: #e0e0ff;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 { margin-bottom: 0.4em; color: #a5d8ff; }
+    input {
+      width: 100%; max-width: 600px;
+      padding: 16px;
+      font-size: 1.2rem;
+      border: 2px solid #444;
+      border-radius: 8px;
+      background: #1a1a2e;
+      color: white;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 14px 40px;
+      font-size: 1.2rem;
+      background: #6366f1;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover { background: #4f46e5; }
+  </style>
+</head>
+<body>
+
+  <h1>Fast Web Proxy</h1>
+  <p>Paste any link</p>
+
+  <input type="text" id="u" placeholder="https://example.com" autofocus />
+  <br>
+  <button onclick="launch()">Go</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
